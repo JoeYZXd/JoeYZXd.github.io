@@ -87,14 +87,14 @@ BLOG_DESCRIPTION = "En，This is Joey! Enjoy!"  # (translatable)
 # in the default language will be shown instead.
 
 # What is the default language?
-DEFAULT_LANG = "en"
+DEFAULT_LANG = "zh_cn"
 
 # What other languages do you have?
 # The format is {"translationcode" : "path/to/translation" }
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    "en": "./en",
+    "zh_cn": "./",
 }
 
 # What will translated input files be named like?
