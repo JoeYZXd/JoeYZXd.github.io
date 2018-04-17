@@ -86,6 +86,20 @@
 <li>通过(<code>pip install virtualenv</code>)安装virtualenv
 </li>
 <li>安装nikola
+<div class="highlight"><pre><span></span><span class="nb">cd</span> ~
+<span class="c1"># 由于我的开发环境存在多个版本的python，所以此处指定使用python3.5, 创建虚拟环境，这样虚拟环境的python版本也是3.5</span>
+virtualenv nikola -p python3.5 <span class="c1"># 此处nikola是我们创建的虚拟环境的名称，可以自行更改</span>
+<span class="c1"># 等待安装完成</span>
+<span class="c1"># 此时存在nikola目录</span>
+<span class="nb">cd</span> nikola
+<span class="nb">source</span> bin/activate <span class="c1">#只有使用此命令才会使虚拟环境生效，运行后，提示符前面会多一个虚拟环境名称，如 (nikola) joey in ~/nikola</span>
+<span class="c1"># 进入虚拟环境后，升级pip, setuptools到最新版本</span>
+pip install --upgrade pip setuptools
+<span class="c1"># 安装nikola</span>
+pip install --upgrade <span class="s2">"Nikola[extras]"</span>
+<span class="c1"># 等待安装完成</span>
+<span class="c1"># Successfully installed nikola</span>
+</pre></div>
 </li>
 </ul>
 </div>
