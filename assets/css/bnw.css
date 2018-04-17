@@ -36,7 +36,7 @@ html {
 }
 body {
   font: 1.2rem/2rem 'Open Sans', 'Microsoft Yahei', "DejaVu Sans", sans-serif;
-  background: #FCF9E8;
+  background: #234523;
   color: #1B2325;
   display: flex;
   flex-direction: column;
@@ -80,13 +80,13 @@ header nav ul > li > a {
   text-decoration: none;
   padding: 5px 5px;
   margin: 0px 8px;
-  border-bottom: 3px solid rgba(252, 249, 232, 0.7);
+  border-bottom: 3px solid rgba(35, 69, 35, 0.7);
   transition: all 0.3s ease;
   text-shadow: 1px 1px 1px #313f42;
   color: #F0AE57;
 }
 header nav ul > li > a:hover {
-  background: #FCF9E8;
+  background: #234523;
   text-shadow: none;
   color: #1B2325;
 }
@@ -140,7 +140,7 @@ header .brand .navbar-toggle .icon-bar {
   display: block;
   height: 2px;
   width: 22px;
-  background: #f0e18e;
+  background: #010101;
 }
 header .brand .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -207,12 +207,12 @@ header .brand .navbar-toggle .icon-bar + .icon-bar {
   padding: 0px 8px;
   position: relative;
   color: #1B2325;
-  background: #FCF9E8;
+  background: #234523;
   box-shadow: 1px 1px 1px #1B2325;
   font-size: 0.9em;
 }
 .post-entry .post-desc .post-tags .tag a:hover {
-  color: #FCF9E8;
+  color: #234523;
   background: #8D3F35;
 }
 .post-entry .post-desc .num-of-comments {
@@ -222,10 +222,10 @@ header .brand .navbar-toggle .icon-bar + .icon-bar {
   padding: 1px 3px;
   font-size: 0.8em;
   color: #1B2325;
-  background: #FCF9E8;
+  background: #234523;
 }
 .post-entry .post-desc .num-of-comments a:hover {
-  color: #FCF9E8;
+  color: #234523;
   background: #8D3F35;
 }
 .post-entry .post-desc .post-description {
@@ -236,7 +236,7 @@ header .brand .navbar-toggle .icon-bar + .icon-bar {
 /* footer */
 footer {
   background: #1B2325;
-  color: #FCF9E8;
+  color: #234523;
   padding: 40px 0;
 }
 footer .container {
@@ -289,7 +289,7 @@ footer .copyright a:hover {
   height: 16px;
   left: calc(8rem - 8px + 3px);
   top: calc(0.4rem + 2px);
-  background: #FCF9E8;
+  background: #234523;
   border-radius: 100%;
 }
 #index-main .post-entry:hover .post-time {
@@ -309,7 +309,7 @@ footer .copyright a:hover {
 .meta-header,
 .post-header {
   background: #1B2325;
-  color: #FCF9E8;
+  color: #234523;
   padding: 10vh 0;
   font-size: 3em;
   line-height: 1em;
@@ -333,21 +333,21 @@ footer .social .social-entry {
 }
 footer .social .social-entry a {
   padding: 10px;
-  color: #FCF9E8;
+  color: #234523;
 }
 footer .social .social-entry a:hover {
   padding: 5px 10px;
-  background: #FCF9E8;
+  background: #234523;
   color: #1B2325;
 }
 /* font color and other colors */
 ::selection {
   background: #465b60;
-  color: #FCF9E8;
+  color: #234523;
 }
 ::-moz-selection {
   background: #465b60;
-  color: #FCF9E8;
+  color: #234523;
 }
 /* post */
 .post-header {
@@ -355,7 +355,7 @@ footer .social .social-entry a:hover {
 }
 .post-meta {
   background: #1B2325;
-  color: #FCF9E8;
+  color: #234523;
 }
 .meta {
   display: flex;
@@ -365,13 +365,13 @@ footer .social .social-entry a:hover {
   font-size: 1rem;
 }
 .meta a {
-  color: #FCF9E8;
+  color: #234523;
   background: #1B2325;
   padding: 2px 4px;
 }
 .meta a:hover {
   color: #1B2325;
-  background: #FCF9E8;
+  background: #234523;
 }
 .meta .authordate {
   font-family: monospace;
@@ -414,13 +414,13 @@ footer .social .social-entry a:hover {
 }
 #post-main a:hover,
 #category-tag a:hover {
-  color: #FCF9E8;
+  color: #234523;
   background-color: #1B2325;
 }
 /* code related, put it in top level, so that it can be overwritten */
 pre {
   border: 1px solid #5c777d;
-  background: #f8e3bc;
+  background: #616533;
   padding: 10px;
   overflow: auto;
   font: 1rem/1.2rem Monaco, Menlo, Consolas, "Deja Vu Sans Mono", "Courier New", monospace;
@@ -428,7 +428,7 @@ pre {
 /* inline code */
 code {
   border: 1px dotted #5c777d;
-  background: #f6d4a0;
+  background: #8a7a3d;
   font: 1rem/1.2rem Monaco, Menlo, Consolas, "Deja Vu Sans Mono", "Courier New", monospace;
 }
 /* background color for pygmentize monokai theme */
@@ -439,8 +439,8 @@ code {
 pre.literal-block,
 blockquote {
   padding-left: 15px;
-  background: #ffffff;
-  border: 1px solid #f6edbb;
+  background: #458945;
+  border: 1px solid #122312;
   border-left: 10px solid #5c777d;
 }
 /* table of content */
@@ -471,11 +471,11 @@ blockquote {
 }
 .postlist a {
   color: #1B2325;
-  background: #FCF9E8;
+  background: #234523;
   padding: 2px 4px;
 }
 .postlist a:hover {
-  color: #FCF9E8;
+  color: #234523;
   background: #1B2325;
 }
 .postlist li time {
@@ -545,7 +545,7 @@ blockquote {
     display: block;
   }
   header nav ul > li a:hover {
-    background: #FCF9E8;
+    background: #234523;
   }
   header .brand .navbar-toggle {
     display: block;
