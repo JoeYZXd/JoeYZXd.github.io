@@ -14,3 +14,18 @@
   - 为了避免与其它python开发环境交叉感染，创建独立的虚拟环境专门用于博客管理
   - 通过(=pip install virtualenv=)安装virtualenv
   - 安装nikola
+    #+BEGIN_SRC sh
+    cd ~
+    # 由于我的开发环境存在多个版本的python，所以此处指定使用python3.5, 创建虚拟环境，这样虚拟环境的python版本也是3.5
+    virtualenv nikola -p python3.5 # 此处nikola是我们创建的虚拟环境的名称，可以自行更改
+    # 等待安装完成
+    # 此时存在nikola目录
+    cd nikola
+    source bin/activate #只有使用此命令才会使虚拟环境生效，运行后，提示符前面会多一个虚拟环境名称，如 (nikola) joey in ~/nikola
+    # 进入虚拟环境后，升级pip, setuptools到最新版本
+    pip install --upgrade pip setuptools
+    # 安装nikola
+    pip install --upgrade "Nikola[extras]"
+    # 等待安装完成
+    # Successfully installed nikola
+    #+END_SRC
