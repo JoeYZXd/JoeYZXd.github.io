@@ -39,8 +39,8 @@
   - 在市区内飞行需要经过同意
   - 其它相关规定可以在网上查询
 *** 入境卡
-    - [[file:/images/entry-application-1.jpeg]]
-    - [[file:/images/entry-application-2.jpeg]]
+    - [[img-url:/images/entry-application-1.jpeg]]
+    - [[img-url:/images/entry-application-2.jpeg]]
 *** 租车
     - 注意车况
 *** 自驾
@@ -135,7 +135,7 @@
         - 下午17:25分（2017年12月26日至2018年2月28日期间开放）
       + 从夏尔餐厅或Matamata I-Site游客中心换票后集合，导游带领乘坐景区观光巴士
       + 从各地出发到此所需时间见下图
- [[file:hobbiton.jpeg]]
+ [[img-url:/images/hobbiton.jpeg]]
     - [ ] 宿泰鲁阿（Tairua）
       - Belinda
       - 手机：+64 212445008
