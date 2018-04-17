@@ -1,5 +1,5 @@
 #+BEGIN_COMMENT
-.. title: Manage Github Blog by nikola in orgmode
+.. title: Manage Github Blog by Nikola in Org Mode
 .. slug: manage-github-blog-by-nikola-in-orgmode
 .. date: 2018-04-17 17:06:52 UTC+08:00
 .. tags: github, blog, nikola, orgmode, python, virtualenv
@@ -167,7 +167,7 @@
      #+END_SRC
    - 引用图片
      - 由于上一步配置的图片路径为`images`,所有将所有需要引用的图片都放入`images`目录
-     - 在博客中通过\[\[img-url:/image/test.jpeg\]\]引用图片，生成的html代码如下：
+     - 在博客中通过{[[img-url:/image/test.jpeg]]}引用图片，生成的html代码如下：
        #+BEGIN_SRC html
        <a href="/images/test.jpeg"/>
        #+END_SRC
