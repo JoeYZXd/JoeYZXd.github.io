@@ -29,3 +29,6 @@
     # 等待安装完成
     # Successfully installed nikola
     #+END_SRC
+* 创建Github博客仓库
+  - 在Github上创建一个名字为{Github用户名}.github.io的仓库（repository)，创建时不勾选初始化, 如下图：
+    [[create_github_blog_repository.png]]
