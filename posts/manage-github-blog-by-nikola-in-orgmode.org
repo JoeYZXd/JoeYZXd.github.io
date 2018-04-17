@@ -2,8 +2,8 @@
 .. title: Manage Github Blog by nikola in orgmode
 .. slug: manage-github-blog-by-nikola-in-orgmode
 .. date: 2018-04-17 17:06:52 UTC+08:00
-.. tags:  
-.. category: 
+.. tags: github, blog, nikola, orgmode, python, virtualenv
+.. category: programming, blog
 .. link: 
 .. description: 使用Nikola管理Github的个人博客，Nikola原生支持orgmode
 .. type: text
