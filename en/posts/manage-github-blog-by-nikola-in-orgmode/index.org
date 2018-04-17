@@ -1,0 +1,16 @@
+#+BEGIN_COMMENT
+.. title: Manage Github Blog by nikola in orgmode
+.. slug: manage-github-blog-by-nikola-in-orgmode
+.. date: 2018-04-17 17:06:52 UTC+08:00
+.. tags:  
+.. category: 
+.. link: 
+.. description: 使用Nikola管理Github的个人博客，Nikola原生支持orgmode
+.. type: text
+#+END_COMMENT
+
+
+* 安装Nikola
+  - 为了避免与其它python开发环境交叉感染，创建独立的虚拟环境专门用于博客管理
+  - 通过(=pip install virtualenv=)安装virtualenv
+  - 安装nikola
