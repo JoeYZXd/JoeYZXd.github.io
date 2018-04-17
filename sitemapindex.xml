@@ -6,32 +6,60 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/blog.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/cat_programming-blog.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/github.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/nikola.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/orgmode.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/python.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/virtualenv.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://JoeYZXd.github.io/en/categories/blog.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T11:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/en/categories/cat_programming-blog.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T11:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/en/categories/github.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T11:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/en/categories/nikola.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T11:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/en/categories/orgmode.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T11:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/en/categories/python.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T11:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/en/categories/virtualenv.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T11:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/en/galleries/rss.xml</loc>
@@ -39,10 +67,18 @@
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/en/rss.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T11:04:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/galleries/rss.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/rss.xml</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/sitemap.xml</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -6,6 +6,50 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
+  <loc>http://JoeYZXd.github.io/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/2018/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/archive.html</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/blog/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/cat_programming-blog/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/github/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/nikola/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/orgmode/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/python/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/virtualenv/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://JoeYZXd.github.io/en/</loc>
   <lastmod>2018-04-17T09:01:00Z</lastmod>
  </url>
@@ -58,7 +102,15 @@
   <lastmod>2018-04-17T10:19:00Z</lastmod>
  </url>
  <url>
+  <loc>http://JoeYZXd.github.io/galleries/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://JoeYZXd.github.io/listings/</loc>
   <lastmod>2018-04-17T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/posts/manage-github-blog-by-nikola-in-orgmode/</loc>
+  <lastmod>2018-04-17T12:17:00Z</lastmod>
  </url>
 </urlset>
