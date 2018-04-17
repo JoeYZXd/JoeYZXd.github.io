@@ -39,8 +39,8 @@
   - 在市区内飞行需要经过同意
   - 其它相关规定可以在网上查询
 *** 入境卡
-    - [[file:images/entry-application-1.jpeg]]
-    - [[file:images/entry-application-2.jpeg]]
+    - [[file:/images/entry-application-1.jpeg]]
+    - [[file:/images/entry-application-2.jpeg]]
 *** 租车
     - 注意车况
 *** 自驾
