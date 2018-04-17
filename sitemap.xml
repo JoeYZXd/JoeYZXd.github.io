@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/</loc>
-  <lastmod>2018-04-17T12:17:00Z</lastmod>
+  <lastmod>2018-04-17T12:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/blog/</loc>
@@ -28,6 +28,10 @@
  <url>
   <loc>http://JoeYZXd.github.io/categories/cat_programming-blog/</loc>
   <lastmod>2018-04-17T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/cat_programming/</loc>
+  <lastmod>2018-04-17T12:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/github/</loc>
@@ -48,58 +52,6 @@
  <url>
   <loc>http://JoeYZXd.github.io/categories/virtualenv/</loc>
   <lastmod>2018-04-17T12:17:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/</loc>
-  <lastmod>2018-04-17T09:01:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/2018/</loc>
-  <lastmod>2018-04-17T09:01:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/archive.html</loc>
-  <lastmod>2018-04-17T10:19:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/categories/</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/categories/blog/</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/categories/cat_programming-blog/</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/categories/github/</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/categories/nikola/</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/categories/orgmode/</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/categories/python/</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/categories/virtualenv/</loc>
-  <lastmod>2018-04-17T10:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/galleries/</loc>
-  <lastmod>2018-04-17T08:55:00Z</lastmod>
- </url>
- <url>
-  <loc>http://JoeYZXd.github.io/en/posts/manage-github-blog-by-nikola-in-orgmode/</loc>
-  <lastmod>2018-04-17T10:19:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/galleries/</loc>
