@@ -1,0 +1,4 @@
+Sitemap: http://JoeYZXd.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: JoeYZXd.github.io
