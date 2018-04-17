@@ -116,7 +116,7 @@
 ** 将博客元数据（metadata）抽离出博客
    - 修改配置文件 =conf.py=
      #+BEGIN_SRC python
-     ONE_FILE_POSTS = false
+     ONE_FILE_POSTS = False
      #+END_SRC
 ** 主题
    - Nikola提供了一些[[https://themes.getnikola.com][主题]]
@@ -146,8 +146,8 @@
    - 修改配置文件 =conf.py=
      #+BEGIN_SRC python
      GLOBAL_CONTEXT = {
-         'email': 'lotabout@gmail.com',
-         'twitter': 'lotabout',
-         'github': 'lotabout',
+         'email': 'joy.zhangxiaodong@gmail.com',
+         'twitter': 'joey.zhangxiaodong',
+         'github': 'JoeYZXd',
      }
      #+END_SRC
