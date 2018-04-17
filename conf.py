@@ -731,11 +731,11 @@ GITHUB_COMMIT_SOURCE = True
 # use this feature if you do not understand what this means.
 
 # Compiler to process LESS files.
-# LESS_COMPILER = 'lessc'
+LESS_COMPILER = 'lessc'
 
 # A list of options to pass to the LESS compiler.
 # Final command is: LESS_COMPILER LESS_OPTIONS file.less
-# LESS_OPTIONS = []
+LESS_OPTIONS = []
 
 # Compiler to process Sass files.
 # SASS_COMPILER = 'sass'
