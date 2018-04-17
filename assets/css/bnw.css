@@ -36,8 +36,8 @@ html {
 }
 body {
   font: 1.2rem/2rem 'Open Sans', 'Microsoft Yahei', "DejaVu Sans", sans-serif;
-  background: #234523;
-  color: #1B2325;
+  background: #FF0000;
+  color: #777777;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -51,14 +51,14 @@ body .main {
 }
 /* header */
 header {
-  background: #8D3F35;
+  background: #0000FF;
   position: fixed;
   z-index: 10;
   top: 0;
   width: 100%;
   font-family: 'McLaren', cursive;
   min-height: 50px;
-  box-shadow: inset 0px -4px 7px -4px #1B2325;
+  box-shadow: inset 0px -4px 7px -4px #777777;
 }
 header > .container {
   display: flex;
@@ -80,15 +80,15 @@ header nav ul > li > a {
   text-decoration: none;
   padding: 5px 5px;
   margin: 0px 8px;
-  border-bottom: 3px solid rgba(35, 69, 35, 0.7);
+  border-bottom: 3px solid rgba(255, 0, 0, 0.7);
   transition: all 0.3s ease;
-  text-shadow: 1px 1px 1px #313f42;
-  color: #F0AE57;
+  text-shadow: 1px 1px 1px #919191;
+  color: #00FF00;
 }
 header nav ul > li > a:hover {
-  background: #234523;
+  background: #FF0000;
   text-shadow: none;
-  color: #1B2325;
+  color: #777777;
 }
 header .brand {
   position: relative;
@@ -104,8 +104,8 @@ header .brand .logo {
 }
 header .brand a,
 header .brand a:focus {
-  color: #F0AE57;
-  text-shadow: 1px 1px 1px #313f42;
+  color: #00FF00;
+  text-shadow: 1px 1px 1px #919191;
   text-decoration: none;
   outline: 0;
 }
@@ -120,9 +120,9 @@ header .brand .navbar-toggle {
   padding: 9px 10px;
   margin: 10px 22px;
   flex: none;
-  background: #8D3F35;
-  border: 1px solid #1B2325;
-  box-shadow: 0px 0px 3px -1px #465b60;
+  background: #0000FF;
+  border: 1px solid #777777;
+  box-shadow: 0px 0px 3px -1px #aaaaaa;
   border-radius: 3px;
   cursor: pointer;
   outline: 0;
@@ -133,14 +133,14 @@ header .brand .navbar-toggle:active {
   outline: 0;
 }
 header .brand .navbar-toggle:active {
-  box-shadow: inset 0px 0px 2px #1B2325;
+  box-shadow: inset 0px 0px 2px #777777;
 }
 header .brand .navbar-toggle .icon-bar {
   border-radius: 1px;
   display: block;
   height: 2px;
   width: 22px;
-  background: #010101;
+  background: #990000;
 }
 header .brand .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -157,7 +157,7 @@ header .brand .navbar-toggle .icon-bar + .icon-bar {
 }
 .header-padding {
   padding-top: 60px;
-  background-color: #1B2325;
+  background-color: #777777;
 }
 /* post-entry */
 .post-entry {
@@ -182,16 +182,16 @@ header .brand .navbar-toggle .icon-bar + .icon-bar {
   flex-basis: 100%;
   font-family: 'Roboto Slab', 'Microsoft Yahei', "DejaVu Sans", serif;
   font-size: 1.1em;
-  border-bottom: 1px solid #d29189;
+  border-bottom: 1px solid #9999ff;
 }
 .post-entry .post-desc .post-title a {
-  color: #98291a;
+  color: #0000f0;
 }
 .post-entry .post-desc .post-title a:hover {
   padding: 2px 0px;
-  background: #1B2325;
-  color: #F0AE57;
-  text-shadow: 1px 1px 1px #1B2325;
+  background: #777777;
+  color: #00FF00;
+  text-shadow: 1px 1px 1px #777777;
 }
 .post-entry .post-desc .post-tags {
   flex: none;
@@ -206,14 +206,14 @@ header .brand .navbar-toggle .icon-bar + .icon-bar {
 .post-entry .post-desc .post-tags .tag a {
   padding: 0px 8px;
   position: relative;
-  color: #1B2325;
-  background: #234523;
-  box-shadow: 1px 1px 1px #1B2325;
+  color: #777777;
+  background: #FF0000;
+  box-shadow: 1px 1px 1px #777777;
   font-size: 0.9em;
 }
 .post-entry .post-desc .post-tags .tag a:hover {
-  color: #234523;
-  background: #8D3F35;
+  color: #FF0000;
+  background: #0000FF;
 }
 .post-entry .post-desc .num-of-comments {
   flex: none;
@@ -221,12 +221,12 @@ header .brand .navbar-toggle .icon-bar + .icon-bar {
 .post-entry .post-desc .num-of-comments a {
   padding: 1px 3px;
   font-size: 0.8em;
-  color: #1B2325;
-  background: #234523;
+  color: #777777;
+  background: #FF0000;
 }
 .post-entry .post-desc .num-of-comments a:hover {
-  color: #234523;
-  background: #8D3F35;
+  color: #FF0000;
+  background: #0000FF;
 }
 .post-entry .post-desc .post-description {
   flex: none;
@@ -235,8 +235,8 @@ header .brand .navbar-toggle .icon-bar + .icon-bar {
 }
 /* footer */
 footer {
-  background: #1B2325;
-  color: #234523;
+  background: #777777;
+  color: #FF0000;
   padding: 40px 0;
 }
 footer .container {
@@ -247,10 +247,10 @@ footer .copyright a,
 footer .copyright a:focus {
   outline: none;
   text-decoration: none;
-  color: #F0AE57;
+  color: #00FF00;
 }
 footer .copyright a:hover {
-  border-bottom: 2px solid #8D3F35;
+  border-bottom: 2px solid #0000FF;
 }
 /* time line */
 #index-main {
@@ -264,7 +264,7 @@ footer .copyright a:hover {
   position: absolute;
   height: 100%;
   width: 6px;
-  background: #1B2325;
+  background: #777777;
   margin-left: 8rem;
   opacity: 0.75;
 }
@@ -279,7 +279,7 @@ footer .copyright a:hover {
   height: 20px;
   left: calc(8rem - 10px + 3px);
   top: calc(0.4rem);
-  background: #98291a;
+  background: #0000f0;
   border-radius: 100%;
 }
 #index-main .post-entry .post-time::after {
@@ -289,17 +289,17 @@ footer .copyright a:hover {
   height: 16px;
   left: calc(8rem - 8px + 3px);
   top: calc(0.4rem + 2px);
-  background: #234523;
+  background: #FF0000;
   border-radius: 100%;
 }
 #index-main .post-entry:hover .post-time {
   box-sizing: content-box;
-  border-bottom: 2px solid #98291a;
+  border-bottom: 2px solid #0000f0;
   position: relative;
   top: 1px;
 }
 #index-main .post-entry:hover .post-time::after {
-  background: #d9a29b;
+  background: #b3b3ff;
 }
 #index-main a {
   text-decoration: none;
@@ -308,8 +308,8 @@ footer .copyright a:hover {
 .tagline,
 .meta-header,
 .post-header {
-  background: #1B2325;
-  color: #234523;
+  background: #777777;
+  color: #FF0000;
   padding: 10vh 0;
   font-size: 3em;
   line-height: 1em;
@@ -333,49 +333,49 @@ footer .social .social-entry {
 }
 footer .social .social-entry a {
   padding: 10px;
-  color: #234523;
+  color: #FF0000;
 }
 footer .social .social-entry a:hover {
   padding: 5px 10px;
-  background: #234523;
-  color: #1B2325;
+  background: #FF0000;
+  color: #777777;
 }
 /* font color and other colors */
 ::selection {
-  background: #465b60;
-  color: #234523;
+  background: #aaaaaa;
+  color: #FF0000;
 }
 ::-moz-selection {
-  background: #465b60;
-  color: #234523;
+  background: #aaaaaa;
+  color: #FF0000;
 }
 /* post */
 .post-header {
   padding: 10vh 0 5vh 0;
 }
 .post-meta {
-  background: #1B2325;
-  color: #234523;
+  background: #777777;
+  color: #FF0000;
 }
 .meta {
   display: flex;
   justify-content: space-around;
-  border-top: 1px dashed #F0AE57;
+  border-top: 1px dashed #00FF00;
   padding: 2px 0px;
   font-size: 1rem;
 }
 .meta a {
-  color: #234523;
-  background: #1B2325;
+  color: #FF0000;
+  background: #777777;
   padding: 2px 4px;
 }
 .meta a:hover {
-  color: #1B2325;
-  background: #234523;
+  color: #777777;
+  background: #FF0000;
 }
 .meta .authordate {
   font-family: monospace;
-  color: #F0AE57;
+  color: #00FF00;
 }
 .meta .post-tags {
   flex: none;
@@ -404,31 +404,31 @@ footer .social .social-entry a:hover {
 #category-tag h5,
 #post-main h6,
 #category-tag h6 {
-  border-bottom: 1px solid #5c777d;
+  border-bottom: 1px solid #c3c3c3;
   font-family: "Palatino", "Palatino Linotype", "Georgia", Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, serif;
 }
 #post-main a,
 #category-tag a {
   padding: 2px;
-  color: #356571;
+  color: #bb9999;
 }
 #post-main a:hover,
 #category-tag a:hover {
-  color: #234523;
-  background-color: #1B2325;
+  color: #FF0000;
+  background-color: #777777;
 }
 /* code related, put it in top level, so that it can be overwritten */
 pre {
-  border: 1px solid #5c777d;
-  background: #616533;
+  border: 1px solid #c3c3c3;
+  background: #b34d00;
   padding: 10px;
   overflow: auto;
   font: 1rem/1.2rem Monaco, Menlo, Consolas, "Deja Vu Sans Mono", "Courier New", monospace;
 }
 /* inline code */
 code {
-  border: 1px dotted #5c777d;
-  background: #8a7a3d;
+  border: 1px dotted #c3c3c3;
+  background: #808000;
   font: 1rem/1.2rem Monaco, Menlo, Consolas, "Deja Vu Sans Mono", "Courier New", monospace;
 }
 /* background color for pygmentize monokai theme */
@@ -439,9 +439,9 @@ code {
 pre.literal-block,
 blockquote {
   padding-left: 15px;
-  background: #458945;
-  border: 1px solid #122312;
-  border-left: 10px solid #5c777d;
+  background: #ff6666;
+  border: 1px solid #cc0000;
+  border-left: 10px solid #c3c3c3;
 }
 /* table of content */
 #table-of-contents,
@@ -470,13 +470,13 @@ blockquote {
   font-size: 1rem;
 }
 .postlist a {
-  color: #1B2325;
-  background: #234523;
+  color: #777777;
+  background: #FF0000;
   padding: 2px 4px;
 }
 .postlist a:hover {
-  color: #234523;
-  background: #1B2325;
+  color: #FF0000;
+  background: #777777;
 }
 .postlist li time {
   padding-right: 20px;
@@ -545,7 +545,7 @@ blockquote {
     display: block;
   }
   header nav ul > li a:hover {
-    background: #234523;
+    background: #FF0000;
   }
   header .brand .navbar-toggle {
     display: block;
