@@ -335,6 +335,16 @@ nikola serve
 <span class="n">IMAGE_THUMBNAIL_FORMAT</span> <span class="o">=</span> <span class="s1">'{name}.thumbnail{ext}'</span>
 </pre></div>
 </li>
+<li>引用图片
+<ul class="org-ul">
+<li>由于上一步配置的图片路径为`images`,所有将所有需要引用的图片都放入`images`目录
+</li>
+<li>在博客中通过\[\[img-url:/image/test.jpeg\]\]引用图片，生成的html代码如下：
+<div class="highlight"><pre><span></span>&lt;a href="/images/test.jpeg"/&gt;
+</pre></div>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>

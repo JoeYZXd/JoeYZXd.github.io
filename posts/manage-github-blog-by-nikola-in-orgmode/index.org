@@ -165,4 +165,10 @@
      IMAGE_THUMBNAIL_SIZE = 400
      IMAGE_THUMBNAIL_FORMAT = '{name}.thumbnail{ext}'
      #+END_SRC
+   - 引用图片
+     - 由于上一步配置的图片路径为`images`,所有将所有需要引用的图片都放入`images`目录
+     - 在博客中通过\[\[img-url:/image/test.jpeg\]\]引用图片，生成的html代码如下：
+       #+BEGIN_SRC html
+       <a href="/images/test.jpeg"/>
+       #+END_SRC
      
