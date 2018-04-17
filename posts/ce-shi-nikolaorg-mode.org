@@ -1,0 +1,22 @@
+#+BEGIN_COMMENT
+.. title: 测试Nikola(Org mode)
+.. slug: ce-shi-nikolaorg-mode
+.. date: 2018-04-17 16:56:53 UTC+08:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+
+* 测试Nikola
+** 标题1
+*** 标题2
+**** 标题3
+     - 创建文章(=nikola new_post -e -f orgmode=)
+     - python程序
+       #+BEGIN_SRC python
+       class test:
+         pass
+       #+END_SRC
