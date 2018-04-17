@@ -111,7 +111,188 @@ pip install --upgrade <span class="s2">"Nikola[extras]"</span>
 <li>在Github上创建一个名字为{Github用户名}.github.io的仓库（repository)，创建时不勾选初始化, 如下图：
 <i>create_github_blog_repository.png</i>
 </li>
+<li>clone仓库
+<div class="highlight"><pre><span></span>$ git clone git@github.com:&lt;username&gt;.github.io.git ~/blog
+</pre></div>
+</li>
+<li>初始化仓库
+<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/blog
+$ git checkout -b sources
+</pre></div>
+</li>
+<li>添加.gitignore
+<div class="highlight"><pre><span></span>*.py[cod]
+__pycache__
+cache
+output
+.doit.db
+_env/
+</pre></div>
+</li>
+<li>提交
+<div class="highlight"><pre><span></span>git add .gitignore
+git commit -m <span class="s2">"Add .gitignore"</span>
+</pre></div>
+</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">初始化博客</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>通过Nikola搭建博客脚手架
+<div class="highlight"><pre><span></span>nikola init my_first_site
+<span class="c1"># 按提示回答一些基本问题</span>
+<span class="c1"># 创建完成后会有一个my_first_site的子目录，不需要，删除之</span>
+mv my_first_site/* .
+rm -rf my_first_site
+</pre></div>
+</li>
+<li>提交Nikola配置文件
+<div class="highlight"><pre><span></span>git add conf.py
+git commit -m <span class="s2">"Add conf.py"</span>
+</pre></div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">安装Org Mode插件</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Nikola原生支持orgmode，不过需要安装插件
+<div class="highlight"><pre><span></span>nikola plugin -i orgmode
+</pre></div>
+</li>
+<li>安装完成后需要修改conf.py完成配置
+<div class="highlight"><pre><span></span><span class="c1"># Add the orgmode compiler to your COMPILERS dict.</span>
+<span class="n">COMPILERS</span><span class="p">[</span><span class="s2">"orgmode"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'.org'</span><span class="p">,)</span>
+
+<span class="c1"># Add org files to your POSTS, PAGES</span>
+<span class="n">POSTS</span> <span class="o">=</span> <span class="n">POSTS</span> <span class="o">+</span> <span class="p">((</span><span class="s2">"posts/*.org"</span><span class="p">,</span> <span class="s2">"posts"</span><span class="p">,</span> <span class="s2">"post.tmpl"</span><span class="p">),)</span>
+<span class="n">PAGES</span> <span class="o">=</span> <span class="n">PAGES</span> <span class="o">+</span> <span class="p">((</span><span class="s2">"stories/*.org"</span><span class="p">,</span> <span class="s2">"stories"</span><span class="p">,</span> <span class="s2">"story.tmpl"</span><span class="p">),)</span>
+</pre></div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">测试</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>至此博客已基本配置完成，可启动服务测试是否安装成功
+<div class="highlight"><pre><span></span>nikola build
+nikola serve
+</pre></div>
+</li>
+<li>通过浏览器访问=<a href="http://localhost:8000">http://localhost:8000</a>=
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">添加新的博客</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>可通过命令快速创建一篇博客
+<div class="highlight"><pre><span></span>nikola new_post -e -f orgmode
+<span class="c1"># 按提示回答一些基本问题</span>
+</pre></div>
+</li>
+<li>除了上面说的启动服务的方式，还可通过下面的命令完成，自动检测是否有更改、编译并启动服务
+<div class="highlight"><pre><span></span>nikola auto
+</pre></div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">部署Github</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>当创建了新的博客后，需要推送到Github,才可在网络上看到最新的博客内容
+</li>
+<li>配置Github推送配置，修改 <code>conf.py</code>
+<div class="highlight"><pre><span></span><span class="n">GITHUB_SOURCE_BRANCH</span> <span class="o">=</span> <span class="s1">'sources'</span>
+<span class="n">GITHUB_DEPLOY_BRANCH</span> <span class="o">=</span> <span class="s1">'master'</span>
+</pre></div>
+</li>
+<li>推送
+<div class="highlight"><pre><span></span>nikola github_deploy
+</pre></div>
+</li>
+<li>访问 <code>http(s)://&lt;username&gt;.github.io</code> 即可看到最新内容
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">优化</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1">将博客元数据（metadata）抽离出博客</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>修改配置文件 <code>conf.py</code>
+<div class="highlight"><pre><span></span><span class="n">ONE_FILE_POSTS</span> <span class="o">=</span> <span class="n">false</span>
+</pre></div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2">主题</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li>Nikola提供了一些<a href="https://themes.getnikola.com">主题</a>
+</li>
+<li>安装主题
+<div class="highlight"><pre><span></span>nikola theme -i bnw
+</pre></div>
+</li>
+<li>修改配置文件 <code>conf.py</code>
+<div class="highlight"><pre><span></span><span class="n">THEME</span> <span class="o">=</span> <span class="s1">'bnw'</span>
+
+<span class="n">USE_BUNDLES</span> <span class="o">=</span> <span class="bp">True</span>
+</pre></div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3">修改主题配色</h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li>修改配色文件 <code>nikola-bnw/less/bnw.less</code>
+<div class="highlight"><pre><span></span>// primary-color: for background
+// secondary-color: navbar-links
+// third-color: for navbar
+// accent-color: for font.
+@primary-color: #FCF7F7;
+@secondary-color: #ECE1DE;
+@third-color: #6B5364;
+@accent-color: #304860;
+</pre></div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-4" class="outline-3">
+<h3 id="sec-8-4">添加页脚的ICON，如Twitter, Facebook等</h3>
+<div class="outline-text-3" id="text-8-4">
+<ul class="org-ul">
+<li>修改配置文件 <code>conf.py</code>
+<div class="highlight"><pre><span></span><span class="n">GLOBAL_CONTEXT</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'email'</span><span class="p">:</span> <span class="s1">'lotabout@gmail.com'</span><span class="p">,</span>
+    <span class="s1">'twitter'</span><span class="p">:</span> <span class="s1">'lotabout'</span><span class="p">,</span>
+    <span class="s1">'github'</span><span class="p">:</span> <span class="s1">'lotabout'</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</li>
+</ul>
+</div>
 </div>
 </div>
             
