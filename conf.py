@@ -134,8 +134,8 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
+        ("/archive.html", "文章"),
+        ("/categories/", "分类"),
         ("/rss.xml", "RSS feed"),
     ),
 }
