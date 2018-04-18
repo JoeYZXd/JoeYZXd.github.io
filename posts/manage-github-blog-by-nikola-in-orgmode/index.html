@@ -204,7 +204,7 @@ git commit -m <span class="s2">"Add conf.py"</span>
 nikola serve
 </pre></div>
 </li>
-<li>通过浏览器访问=<a href="http://localhost:8000">http://localhost:8000</a>=
+<li>通过浏览器访问 <code>http://localhost:8000</code>
 </li>
 </ul>
 </div>
@@ -341,7 +341,12 @@ assets/js/all-nocdn.js=jquery-1.10.2.min.js,headroom.min.js,scripts.js
 <ul class="org-ul">
 <li>由于上一步配置的图片路径为`images`,所有将所有需要引用的图片都放入`images`目录
 </li>
-<li>在博客中通过{<img src="../../image/test.jpeg" alt="nil">}引用图片，生成的html代码如下：
+<li>在博客中通过 
+<div class="highlight"><pre><span></span>[[img-url:/image/test.jpeg]]
+</pre></div>
+<p>
+引用图片，生成的html代码如下：
+</p>
 <div class="highlight"><pre><span></span>&lt;a href="/images/test.jpeg"/&gt;
 </pre></div>
 </li>
