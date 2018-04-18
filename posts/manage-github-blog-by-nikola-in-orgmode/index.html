@@ -277,11 +277,9 @@ nikola serve
 </pre></div>
 </li>
 </ul>
-</div>
-</div>
-<div id="outline-container-sec-8-3" class="outline-3">
-<h3 id="sec-8-3">修改主题配色</h3>
-<div class="outline-text-3" id="text-8-3">
+<p>
+** 修改主题配色
+</p>
 <ul class="org-ul">
 <li>修改配色文件 <code>nikola-bnw/less/bnw.less</code>
 <div class="highlight"><pre><span></span>// primary-color: for background
@@ -294,12 +292,22 @@ nikola serve
 @accent-color: #304860;
 </pre></div>
 </li>
+<li>修改 <code>/themes/bnw/bundles</code>
+<div class="highlight"><pre><span></span>assets/css/all-nocdn.css=bnw-generated.css,bnw.css,font-awesome.min.css,rst.css,code.css,custom.css
+assets/css/all.css=bnw-generated.css,bnw.css,font-awesome.min.css,rst.css,code.css,custom.css
+assets/js/all-nocdn.js=jquery-1.10.2.min.js,headroom.min.js,scripts.js
+</pre></div>
+<ul class="org-ul">
+<li>其中 <code>all-nocdn.css</code> 和 <code>all.css</code> 都添加了 <code>bnw.css=，=bnw.css</code> 由配置文件 <code>/themes/bnw/less/bnw.less</code> 生成， <code>bnw.less</code> 中可对主题配色进行修改
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-8-4" class="outline-3">
-<h3 id="sec-8-4">添加页脚的ICON，如Twitter, Facebook等</h3>
-<div class="outline-text-3" id="text-8-4">
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3">添加页脚的ICON，如Twitter, Facebook等</h3>
+<div class="outline-text-3" id="text-8-3">
 <ul class="org-ul">
 <li>修改配置文件 <code>conf.py</code>
 <div class="highlight"><pre><span></span><span class="n">GLOBAL_CONTEXT</span> <span class="o">=</span> <span class="p">{</span>
@@ -312,9 +320,9 @@ nikola serve
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-8-5" class="outline-3">
-<h3 id="sec-8-5">引用图片</h3>
-<div class="outline-text-3" id="text-8-5">
+<div id="outline-container-sec-8-4" class="outline-3">
+<h3 id="sec-8-4">引用图片</h3>
+<div class="outline-text-3" id="text-8-4">
 <ul class="org-ul">
 <li>配置图片长廊及图片仓库，修改配置文件 <code>conf.py</code>
 <div class="highlight"><pre><span></span><span class="n">GALLERY_FOLDERS</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"galleries"</span><span class="p">:</span> <span class="s2">"galleries"</span><span class="p">}</span>
