@@ -89,7 +89,7 @@
     nikola build
     nikola serve
     #+END_SRC
-  - 通过浏览器访问=http://localhost:8000=
+  - 通过浏览器访问 =http://localhost:8000=
 * 添加新的博客
   - 可通过命令快速创建一篇博客
     #+BEGIN_SRC sh
@@ -174,7 +174,11 @@
      #+END_SRC
    - 引用图片
      - 由于上一步配置的图片路径为`images`,所有将所有需要引用的图片都放入`images`目录
-     - 在博客中通过{[[img-url:/image/test.jpeg]]}引用图片，生成的html代码如下：
+     - 在博客中通过 
+       #+BEGIN_SRC org
+       [[img-url:/image/test.jpeg]]
+       #+END_SRC
+       引用图片，生成的html代码如下：
        #+BEGIN_SRC html
        <a href="/images/test.jpeg"/>
        #+END_SRC
