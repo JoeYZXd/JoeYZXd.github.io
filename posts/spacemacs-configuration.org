@@ -1,0 +1,133 @@
+* 初始配置(=~/.spacemacs=)
+** 配置启动窗体
+   - 最大化启动
+   #+BEGIN_SRC emacs-lisp
+   (dotspacemacs-fullscreen-at-startup t)
+   #+END_SRC
+   - 启动默认透明度
+   #+BEGIN_SRC emacs-lisp
+   (dotspacemacs-active-transparency 80)
+   (dotspacemacs-inactive-transparency 50)
+   #+END_SRC
+   - 默认启动时未开启透明，可通过下面的命令启动窗口透明
+   =SPC SPC spacemacs/enable-transparency=
+** 配置字体
+   - 需要优化安装系统字体，不然启动会提示字体不存在，安装系统字体的方式自行百度
+   #+BEGIN_SRC emacs-lisp
+   (defun dotspacemacs/init () 
+     (setq-default
+       dotspacemacs-default-font '("Source Code Pro" 
+                                   :size 14
+                                   :weight normal
+                                   :width normal
+                                   :powerline-scale 1.1)))
+   #+END_SRC
+   - 放大或缩小字体的命令如下：
+    ==
+** 配置主题 
+*** 可选主题
+    - junio 
+    - inkpot *****
+    - material ****  优点：突出标题、代码块等
+    - moe-dark *****  优点：颜色比较清晰
+*** 设置方式
+  #+BEGIN_SRC lisp
+  (defun dotspacemacs/init ()
+    (setq-default
+      dotspacemacs-themes '(moe-dark
+                            moe-light)))
+  #+END_SRC
+  - 选择主题 =SPC T s=
+  - 切换主题 =SPC T n=
+** 启动基础插件   
+   - auto-completion
+   - better-defaults
+   - emacs-lisp
+   - git
+   - markdown
+   - shell
+     #+BEGIN_SRC lisp
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom
+            shell-default-shell 'eshell)
+     #+END_SRC
+   - spell-checking
+     - 安装aspell及英文词典(=yum install aspell aspell-en=)
+     - 配置不默认开启flyspell mode
+       #+BEGIN_SRC emacs-lisp
+       (spell-checking :variables
+                       ispell-dictionary "american"
+                       spell-checking-enable-by-default nil)
+       #+END_SRC
+   - syntax-checking
+   - version-control
+   - javascript
+     *需要安装tern, 不然emacs启动会有warning*
+     =npm install -g tern=
+   - html
+   - yaml
+   - python
+   - evil-commentary
+   - elixir
+     *用于显示安装插件的详细文档*
+     =SPC h l= 
+   - org
+     *需要避免与emacs自带的org mode发生冲突*
+     #+BEGIN_SRC lisp
+     (with-eval-after-load 'org
+       ;; here goes your Org config :)
+       ;; ...
+       )
+     #+END_SRC
+     *添加Github Support*
+     #+BEGIN_SRC lisp
+     (setq-default dotspacemacs-configuration-layers '(
+       (org :variables org-enable-github-support t)))
+     #+END_SRC
+   - 中文支持、有道词典
+     #+BEGIN_SRC lisp
+     (chinese :packages youdao-dictionary fcitx
+              :variables chinese-enable-fcitx nil
+              chinese-enable-youdao-dict t)
+     #+END_SRC
+* Layer配置
+*** Mine Layer 
+  - 创建Layer(=SPC SPC configuration-layer/create-layer=)
+  - 进入Layer(joey)目录(=cd ~/.emacs.d/private/joey=)
+**** 引入其它Layer(=~/.emacs.d/private/joey/layer.el=)
+     - 引入其它Layer
+       #+BEGIN_SRC emacs-lisp
+      (configuration-layer/declare-layers '(joey-org)) 
+       #+END_SRC
+**** 基础配置(=~/.emacs.d/private/joey/config.el=)
+     - 设置复制粘贴
+      #+BEGIN_SRC emacs-lisp
+      (setq x-select-enable-clipboard t)
+      (setq line-number-mode t)
+      (setq truncate-lines t)
+
+      (unless window-system
+        (when (getenv "DISPLAY")
+          (defun xsel-cut-function (text &optional push)
+            (with-temp-buffer
+              (insert text)
+              (call-process-region (point-min) (point-max) "xsel" nil 0 nil "--clipboard" "--input")))
+          (defun xsel-paste-function ()
+            (let ((xsel-output (shell-command-to-string "xsel --clipboard --output")))
+              (unless (string= (car kill-ring) xsel-output)
+                xsel-output )))
+          (setq interprogram-cut-function 'xsel-cut-function)
+          (setq interprogram-paste-function 'xsel-paste-function)))
+      #+END_SRC
+     - 设置babel python使用的python版本
+      #+BEGIN_SRC emacs-lisp
+      (setq org-babel-python-command "/usr/local/apps/python3/bin/python3.5")
+      #+END_SRC
+*** Org Mode Layer
+    
+* 开发环境配置
+** python
+** javascript
+** org mode
+* 插件
