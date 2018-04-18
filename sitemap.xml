@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/archive.html</loc>
-  <lastmod>2018-04-18T08:09:00Z</lastmod>
+  <lastmod>2018-04-18T08:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-04-18T08:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/blog/</loc>
@@ -32,6 +32,10 @@
  <url>
   <loc>http://JoeYZXd.github.io/categories/cat_programming/</loc>
   <lastmod>2018-04-18T04:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/emacs/</loc>
+  <lastmod>2018-04-18T08:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/github/</loc>
@@ -62,6 +66,10 @@
   <lastmod>2018-04-18T04:04:00Z</lastmod>
  </url>
  <url>
+  <loc>http://JoeYZXd.github.io/categories/spacemacs/</loc>
+  <lastmod>2018-04-18T08:14:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://JoeYZXd.github.io/categories/virtualenv/</loc>
   <lastmod>2018-04-18T04:04:00Z</lastmod>
  </url>
@@ -80,5 +88,9 @@
  <url>
   <loc>http://JoeYZXd.github.io/posts/plan-of-newzealand-journey/</loc>
   <lastmod>2018-04-18T04:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/posts/spacemacs-configuration/</loc>
+  <lastmod>2018-04-18T08:14:00Z</lastmod>
  </url>
 </urlset>
