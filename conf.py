@@ -136,7 +136,6 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/archive.html", "Archives"),
         ("/categories/", "Categories"),
-        ("/rss.xml", "RSS feed"),
     ),
 }
 
