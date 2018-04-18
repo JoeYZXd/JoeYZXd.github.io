@@ -51,7 +51,7 @@ body .main {
 }
 /* header */
 header {
-  background: #99CED3;
+  background: #86B3D1;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -264,7 +264,7 @@ footer .copyright a:hover {
   position: absolute;
   height: 100%;
   width: 6px;
-  background: #86B3D1;
+  background: #EDB5BF;
   margin-left: 8rem;
   opacity: 0.75;
 }
@@ -308,7 +308,7 @@ footer .copyright a:hover {
 .tagline,
 .meta-header,
 .post-header {
-  background: #86B3D1;
+  background: #EDB5BF;
   color: #4D6D9A;
   padding: 10vh 0;
   font-size: 3em;
