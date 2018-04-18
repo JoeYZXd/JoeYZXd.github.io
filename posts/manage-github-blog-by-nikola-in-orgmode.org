@@ -130,7 +130,7 @@
      
      USE_BUNDLES = True
      #+END_SRC
-** 修改主题配色
+   ** 修改主题配色
    - 修改配色文件 =nikola-bnw/less/bnw.less=
      #+BEGIN_SRC text
      // primary-color: for background
@@ -142,6 +142,13 @@
      @third-color: #6B5364;
      @accent-color: #304860;
      #+END_SRC
+   - 修改 =/themes/bnw/bundles=
+     #+BEGIN_SRC conf
+     assets/css/all-nocdn.css=bnw-generated.css,bnw.css,font-awesome.min.css,rst.css,code.css,custom.css
+     assets/css/all.css=bnw-generated.css,bnw.css,font-awesome.min.css,rst.css,code.css,custom.css
+     assets/js/all-nocdn.js=jquery-1.10.2.min.js,headroom.min.js,scripts.js
+     #+END_SRC
+     - 其中 =all-nocdn.css= 和 =all.css= 都添加了 =bnw.css=，=bnw.css= 由配置文件 =/themes/bnw/less/bnw.less= 生成， =bnw.less= 中可对主题配色进行修改
 ** 添加页脚的ICON，如Twitter, Facebook等
    - 修改配置文件 =conf.py=
      #+BEGIN_SRC python
