@@ -14,7 +14,7 @@
 @secondary-color: #5F6366; //lightblue
 @third-color: #99CED3;
 @accent-color: #86B3D1;
-@bling-color: #EDB5BF;
+@line-color: #EDB5BF;
 
 /* Font Mixins */
 .body-font() {
@@ -75,7 +75,7 @@ body {
 
 /* header */
 header {
-    background: @third-color;
+    background: @accent-color;
     position: fixed;
     z-index: 10;
     top: 0;
@@ -324,7 +324,7 @@ footer {
 	    position: absolute;
 	    height: 100%;
 	    width: 6px;
-	    background: @accent-color;
+	    background: @line-color;
 	    margin-left: 8rem;
 	    opacity: 0.75;
 	}
@@ -382,7 +382,7 @@ footer {
 .tagline,
 .meta-header,
 .post-header {
-    background: @accent-color;
+    background: @line-color;
     color: @primary-color;
     padding: 10vh 0;
     font-size: 3em;
