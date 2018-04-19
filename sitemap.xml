@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/archive.html</loc>
-  <lastmod>2018-04-18T08:14:00Z</lastmod>
+  <lastmod>2018-04-19T13:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/</loc>
-  <lastmod>2018-04-18T08:14:00Z</lastmod>
+  <lastmod>2018-04-19T13:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/blog/</loc>
@@ -44,6 +44,10 @@
  <url>
   <loc>http://JoeYZXd.github.io/categories/journey/</loc>
   <lastmod>2018-04-18T04:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/key-binding/</loc>
+  <lastmod>2018-04-19T13:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/newzealand/</loc>
@@ -82,6 +86,10 @@
   <lastmod>2018-04-18T04:04:00Z</lastmod>
  </url>
  <url>
+  <loc>http://JoeYZXd.github.io/posts/key-bindings-of-spacemacs/</loc>
+  <lastmod>2018-04-19T13:46:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://JoeYZXd.github.io/posts/manage-github-blog-by-nikola-in-orgmode/</loc>
   <lastmod>2018-04-18T04:04:00Z</lastmod>
  </url>
@@ -92,5 +100,9 @@
  <url>
   <loc>http://JoeYZXd.github.io/posts/spacemacs-configuration/</loc>
   <lastmod>2018-04-18T08:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/posts/the-guide-of-creating-a-wechat-store/</loc>
+  <lastmod>2018-04-19T13:46:00Z</lastmod>
  </url>
 </urlset>
