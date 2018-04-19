@@ -1,0 +1,36 @@
+#+BEGIN_COMMENT
+.. title: Key Bindings of Spacemacs
+.. slug: key-bindings-of-spacemacs
+.. date: 2018-04-18 16:48:32 UTC+08:00
+.. tags: Emacs, Spacemacs, Key-Binding
+.. category: Programming
+.. link: 
+.. description: 常用Spacemacs快捷键
+.. type: text
+#+END_COMMENT
+
+
+* 视图相关
+  | Function                  | Keys      | Description                        |
+  |---------------------------+-----------+------------------------------------|
+  | Zoom in                   | =SPC z f= | =+= / ===                          |
+  | Zoom out                  | =SPC z f= | =-=                                |
+  | Zoom reset                | =SPC z f= | =0=                                |
+  | Show Line Number          | =SPC t n= |                                    |
+  | Show relative line number | =SPC t r= |                                    |
+  | Comment Line              | =g c c=   |                                    |
+  | Comment Downward Lines    | =g c 5 j= |                                    |
+  | Comment Forward Lines     | =g c 5 k= |                                    |
+  | Comment Selected Lines    | =g c=     | In Visual Mode, First Select Lines |
+  | Indent Selected Lines     | =C-M-\=   | Defined in joey-misc layer         |
+ 
+* 编辑模式
+  | Function         | Keys | Description      |
+  | Exit Insert Mode | =fd= | Quickly enter fd |
+
+* FlySpell Mode
+  | Change Word | =SPC S c= | =C-j= downward, =C-k= upward |
+
+* Dired Mode
+  | eDiff                 | =e=   | first mark the 2 files want to be compared |
+  | Open parent directory | =C-k= | Open parent directory in the same buffer   |

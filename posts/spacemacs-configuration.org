@@ -125,7 +125,29 @@
       (setq org-babel-python-command "/usr/local/apps/python3/bin/python3.5")
       #+END_SRC
 *** Org Mode Layer
-    
+  - 创建Layer(=joey-org=)
+**** 目的：GTD
+    - 使用Org Mode实践GTD
+***** 分类文件
+      - inbox.org: 所有东西
+      - gtd.org: 所有项目
+      - someday.org: 当前不处理的任务，未来会去处理，但不想时时看到
+      - tickler.org: 在指定时候会进行提醒的事项
+***** 配置分类文件(=joey/config.el=)
+      #+BEGIN_SRC emacs-lisp
+      (defvar org-agenda-dir "" "gtd org files location")
+      (setq default
+            org-agenda-dir "/home/joey/Jooooooey/gtd")
+      (setq org-agenda-file-inbox (expand-file-name "inbox.org" org-agenda-dir))
+      (setq org-agenda-file-gtd (expand-file-name "gtd.org" org-agenda-dir))
+      (setq org-agenda-file-someday (expand-file-name "someday.org" org-agenda-dir))
+      (setq org-agenda-file-tickler (expand-file-name "tickler.org" org-agenda-dir))
+      (setq org-agenda-files (list org-agenda-dir))
+      #+END_SRC
+***** GTD实践方式
+      [[img-url:/images/GTDcanonical.png]]
+***** 配置Org Mode Package(=joey-org/package.el=)
+      - Capture
 * 开发环境配置
 ** python
 ** javascript

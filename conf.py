@@ -282,7 +282,7 @@ COMPILERS = {
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-ONE_FILE_POSTS = False 
+ONE_FILE_POSTS = True
 
 # Preferred metadata format for new posts
 # "Nikola": reST comments wrapped in a comment if needed (default)
@@ -977,12 +977,12 @@ RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, googleplus, intensedebate, isso, livefyre, muut
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = "muut"
+COMMENT_SYSTEM = ""
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = "enjoey"
+COMMENT_SYSTEM_ID = ""
 
 # Create index.html for page folders?
 # WARNING: if a page would conflict with the index file (usually
