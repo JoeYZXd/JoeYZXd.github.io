@@ -1,7 +1,7 @@
 #+STARTUP: entitiespretty
 #+BEGIN_COMMENT
-.. title: Reading_Notes_Of_Core_Python_Applications_Programming
-.. slug: reading_notes_of_core_python_applications_programming
+.. title: Reading Notes of Core Python Applications Programming
+.. slug: reading notes of core python applications programming
 .. date: 2018-04-23 22:31:39 UTC+08:00
 .. tags: Reading, Python
 .. category: Programming
