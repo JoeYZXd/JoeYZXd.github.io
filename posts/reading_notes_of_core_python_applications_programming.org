@@ -1,0 +1,44 @@
+#+STARTUP: entitiespretty
+#+BEGIN_COMMENT
+.. title: *Reading_Notes_Of_Core_Python_Applications_Programming*
+.. slug: *reading_notes_of_core_python_applications_programming*
+.. date: 2018-04-23 22:31:39 UTC+08:00
+.. tags: Reading, Python
+.. category: Programming
+.. link: 
+.. description: Python核心编程（第三版）读书笔记
+.. type: text
+#+END_COMMENT
+
+* 正则表达式
+** 特殊符号与字母
+   - Table 1-1 正则表达式的符号与特殊字母
+     | Notation             | Description                                                   | Example Regex           |
+     |----------------------+---------------------------------------------------------------+-------------------------|
+     | *Symbols*            |                                                               |                         |
+     |----------------------+---------------------------------------------------------------+-------------------------|
+     | /literal/            | Match literal string value /literal/                          | foo                     |
+     | /re1\vert{}re2/            | Match regular expression /re1/ or /re2/                       | foo\vert{}bar                 |
+     | .                    | Match /any character/ (except \n)                             | b.b                     |
+     | ^                    | Match /start of string/                                       | ^Dear                   |
+     | $                    | Match /end of string/                                         | /bin/*sh$               |
+     | \star                    | Match /0 or more/ occurrences of preceding regex              | [A-Za-z0-9]*            |
+     | +                    | Match /1 or more/ occurrences of preceding regex              | [a-z]+\.com             |
+     | ?                    | Match /0 or 1/ occurrence(s) of preceding regex               | goo?                    |
+     | {N}                  | Match /N/ occurrences of preceding regex                      | [0-9]{3}                |
+     | {M,N}                | Match from /M/ to /N/ occurrences of preceding regex          | [0-9]{5,9}              |
+     | [...]                | Match any single character from /character/ class             | [aeiou]                 |
+     | [..x-y..]            | Match any single character in the /range from x to y/         | [0-9],[A-Za-z]          |
+     | [^...]               | Do /not match/ any character from character class,            | [                       |
+     |                      | including any ranges, if present                              |                         |
+     | (*\vert+\vert?\vert{}{})?          | Apply "non-greedy" versions of above occurrence/repetition    | .*?[a-z]                |
+     |                      | symbols (*, +, ?, {})                                         |                         |
+     | (...)                | Match enclosed regex and save as /subgroup/                   | ([0-9]{3})?, f(oo\vert{}u)bar |
+     |----------------------+---------------------------------------------------------------+-------------------------|
+     | *Special Characters* |                                                               |                         |
+     |----------------------+---------------------------------------------------------------+-------------------------|
+     | \d                   | Match any decimal /digit/, same as [0-9](\D is inverse of \d: | data\d+.txt             |
+     |                      | do not match any numeric digit)                               |                         |
+     
+    
+     
