@@ -26,7 +26,7 @@ SITE_URL = "http://JoeYZXd.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://JoeYZXd.github.io/"
 BLOG_EMAIL = "joy.zhangxiaodong@gmail.com"
-BLOG_DESCRIPTION = "En，This is Joey! Enjoy!"  # (translatable)
+BLOG_DESCRIPTION = "En，This is Joey!  Enjoy!"  # (translatable)
 
 # Nikola is multilingual!
 #
