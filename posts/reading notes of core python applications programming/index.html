@@ -87,135 +87,35 @@
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Table 1-1 正则表达式的符号与特殊字母
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup>
-<col class="left">
-<col class="left">
-<col class="left">
-</colgroup>
-<thead><tr>
-<th scope="col" class="left">Notation</th>
-<th scope="col" class="left">Description</th>
-<th scope="col" class="left">Example Regex</th>
-</tr></thead>
-<tbody><tr>
-<td class="left"><b>Symbols</b></td>
-<td class="left"> </td>
-<td class="left"> </td>
-</tr></tbody>
-<tbody>
-<tr>
-<td class="left"><i>literal</i></td>
-<td class="left">Match literal string value <i>literal</i>
-</td>
-<td class="left">foo</td>
-</tr>
-<tr>
-<td class="left"><i>re1&amp;vert;re2</i></td>
-<td class="left">Match regular expression <i>re1</i> or <i>re2</i>
-</td>
-<td class="left">foo&amp;vert;bar</td>
-</tr>
-<tr>
-<td class="left">.</td>
-<td class="left">Match <i>any character</i> (except \n)</td>
-<td class="left">b.b</td>
-</tr>
-<tr>
-<td class="left">^</td>
-<td class="left">Match <i>start of string</i>
-</td>
-<td class="left">^Dear</td>
-</tr>
-<tr>
-<td class="left">$</td>
-<td class="left">Match <i>end of string</i>
-</td>
-<td class="left">/bin/*sh$</td>
-</tr>
-<tr>
-<td class="left">*</td>
-<td class="left">Match <i>0 or more</i> occurrences of preceding regex</td>
-<td class="left">[A-Za-z0-9]*</td>
-</tr>
-<tr>
-<td class="left">+</td>
-<td class="left">Match <i>1 or more</i> occurrences of preceding regex</td>
-<td class="left">[a-z]+\.com</td>
-</tr>
-<tr>
-<td class="left">?</td>
-<td class="left">Match <i>0 or 1</i> occurrence(s) of preceding regex</td>
-<td class="left">goo?</td>
-</tr>
-<tr>
-<td class="left">{N}</td>
-<td class="left">Match <i>N</i> occurrences of preceding regex</td>
-<td class="left">[0-9]{3}</td>
-</tr>
-<tr>
-<td class="left">{M,N}</td>
-<td class="left">Match from <i>M</i> to <i>N</i> occurrences of preceding regex</td>
-<td class="left">[0-9]{5,9}</td>
-</tr>
-<tr>
-<td class="left">[…]</td>
-<td class="left">Match any single character from <i>character</i> class</td>
-<td class="left">[aeiou]</td>
-</tr>
-<tr>
-<td class="left">[..x-y..]</td>
-<td class="left">Match any single character in the <i>range from x to y</i>
-</td>
-<td class="left">[0-9],[A-Za-z]</td>
-</tr>
-<tr>
-<td class="left">[^…]</td>
-<td class="left">Do <i>not match</i> any character from character class,</td>
-<td class="left">[</td>
-</tr>
-<tr>
-<td class="left"> </td>
-<td class="left">including any ranges, if present</td>
-<td class="left"> </td>
-</tr>
-<tr>
-<td class="left">(*&amp;vert;+&amp;vert;?&amp;vert;{})?</td>
-<td class="left">Apply "non-greedy" versions of above occurrence/repetition</td>
-<td class="left">.*?[a-z]</td>
-</tr>
-<tr>
-<td class="left"> </td>
-<td class="left">symbols (*, +, ?, {})</td>
-<td class="left"> </td>
-</tr>
-<tr>
-<td class="left">(…)</td>
-<td class="left">Match enclosed regex and save as <i>subgroup</i>
-</td>
-<td class="left">([0-9]{3})?, f(oo&amp;vert;u)bar</td>
-</tr>
-</tbody>
-<tbody><tr>
-<td class="left"><b>Special Characters</b></td>
-<td class="left"> </td>
-<td class="left"> </td>
-</tr></tbody>
-<tbody>
-<tr>
-<td class="left">\d</td>
-<td class="left">Match any decimal <i>digit</i>, same as [0-9](\D is inverse of \d:</td>
-<td class="left">data\d+.txt</td>
-</tr>
-<tr>
-<td class="left"> </td>
-<td class="left">do not match any numeric digit)</td>
-<td class="left"> </td>
-</tr>
-</tbody>
-</table>
 </li>
 </ul>
+<div class="highlight"><pre><span></span>| Notation             | Description                                                   | Example Regex           |
+|----------------------+---------------------------------------------------------------+-------------------------|
+| *Symbols*            |                                                               |                         |
+|----------------------+---------------------------------------------------------------+-------------------------|
+| /literal/            | Match literal string value /literal/                          | foo                     |
+| /re1\vert{}re2/            | Match regular expression /re1/ or /re2/                       | foo\vert{}bar                 |
+| .                    | Match /any character/ (except \n)                             | b.b                     |
+| ^                    | Match /start of string/                                       | ^Dear                   |
+| $                    | Match /end of string/                                         | /bin/*sh$               |
+| \star                    | Match /0 or more/ occurrences of preceding regex              | [A-Za-z0-9]*            |
+| +                    | Match /1 or more/ occurrences of preceding regex              | [a-z]+\.com             |
+| ?                    | Match /0 or 1/ occurrence(s) of preceding regex               | goo?                    |
+| {N}                  | Match /N/ occurrences of preceding regex                      | [0-9]{3}                |
+| {M,N}                | Match from /M/ to /N/ occurrences of preceding regex          | [0-9]{5,9}              |
+| [...]                | Match any single character from /character/ class             | [aeiou]                 |
+| [..x-y..]            | Match any single character in the /range from x to y/         | [0-9],[A-Za-z]          |
+| [^...]               | Do /not match/ any character from character class,            | [                       |
+|                      | including any ranges, if present                              |                         |
+| (*\vert+\vert?\vert{}{})?          | Apply "non-greedy" versions of above occurrence/repetition    | .*?[a-z]                |
+|                      | symbols (*, +, ?, {})                                         |                         |
+| (...)                | Match enclosed regex and save as /subgroup/                   | ([0-9]{3})?, f(oo\vert{}u)bar |
+|----------------------+---------------------------------------------------------------+-------------------------|
+| *Special Characters* |                                                               |                         |
+|----------------------+---------------------------------------------------------------+-------------------------|
+| \d                   | Match any decimal /digit/, same as [0-9](\D is inverse of \d: | data\d+.txt             |
+|                      | do not match any numeric digit)                               |                         |
+</pre></div>
 </div>
 </div>
 </div>
