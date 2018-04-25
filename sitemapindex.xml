@@ -15,7 +15,7 @@
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/cat_programming.xml</loc>
-  <lastmod>2018-04-24T03:10:00Z</lastmod>
+  <lastmod>2018-04-25T07:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/emacs.xml</loc>
@@ -26,12 +26,20 @@
   <lastmod>2018-04-18T07:16:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/java.xml</loc>
+  <lastmod>2018-04-25T07:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://JoeYZXd.github.io/categories/journey.xml</loc>
   <lastmod>2018-04-18T04:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/key-binding.xml</loc>
   <lastmod>2018-04-19T13:46:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/mysql.xml</loc>
+  <lastmod>2018-04-25T07:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/newzealand.xml</loc>
@@ -50,12 +58,16 @@
   <lastmod>2018-04-18T04:04:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/programming.xml</loc>
+  <lastmod>2018-04-25T07:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://JoeYZXd.github.io/categories/python.xml</loc>
-  <lastmod>2018-04-24T03:10:00Z</lastmod>
+  <lastmod>2018-04-25T07:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/reading.xml</loc>
-  <lastmod>2018-04-24T03:10:00Z</lastmod>
+  <lastmod>2018-04-24T03:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/spacemacs.xml</loc>
@@ -66,15 +78,19 @@
   <lastmod>2018-04-18T07:16:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/web.xml</loc>
+  <lastmod>2018-04-25T07:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://JoeYZXd.github.io/galleries/rss.xml</loc>
   <lastmod>2018-04-24T02:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/rss.xml</loc>
-  <lastmod>2018-04-24T03:10:00Z</lastmod>
+  <lastmod>2018-04-25T07:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/sitemap.xml</loc>
-  <lastmod>2018-04-24T03:10:00Z</lastmod>
+  <lastmod>2018-04-25T07:01:00Z</lastmod>
  </sitemap>
 </sitemapindex>
