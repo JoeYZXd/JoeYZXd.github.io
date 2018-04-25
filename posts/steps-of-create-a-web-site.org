@@ -1,0 +1,141 @@
+#+BEGIN_COMMENT
+.. title: Steps of Create a Web Site
+.. slug: steps-of-create-a-web-site
+.. date: 2018-04-24 23:15:22 UTC+08:00
+.. tags: Web, Programming, MySQL, Python, Java
+.. category: Programming
+.. link: 
+.. description: 建站步骤 
+.. type: text
+#+END_COMMENT
+
+* 数据库环境
+** 安装MySQL
+*** Adding the MySQL Yum Repository
+    - Go to the download page for MySQL Yum Repository at [[https://repo.mysql.com//mysql80-community-release-el7-1.noarch.rpm][MySQL Yum Repos]]
+    - Install the release package
+      #+BEGIN_SRC shell
+      sudo rpm -Uvh mysql80-community-release-el7-1.noarch.rpm
+      #+END_SRC
+*** Selecting a Release Series
+    - list all repos
+      #+BEGIN_SRC shell
+      yum repolist all | grep mysql
+      #+END_SRC
+    - edit =/etc/yum.repos.d/mysql-community.repo=, change the selected release =enabled= = 1, change others to =enabled= = 0
+      #+BEGIN_SRC properties
+      [mysql57-community]
+      name=MySQL 5.7 Community Server
+      baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/
+      enabled=1
+      gpgcheck=1
+      gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+      #+END_SRC
+    - check the enabled repo
+      #+BEGIN_SRC shell
+      yum repolist enabled | grep mysql
+      #+END_SRC
+*** Installing MySQL
+    #+BEGIN_SRC shell
+    sudo yum install mysql-community-server 
+    #+END_SRC
+*** Config MySQL
+    - change default encoding to UTF-8, edit =/etc/my.cnf=, add following configurations
+      #+BEGIN_SRC properties
+      [client]
+      default-character-set = utf8
+
+      [mysqld]
+      default-storage-engine = INNODB
+      character-set-server = utf8
+      collation-server = utf8_general_ci
+      #+END_SRC
+*** Starting the MySQL
+    - Starting MySQL server with the following command:
+      #+BEGIN_SRC shell
+      sudo service mysqld start
+      #+END_SRC
+    - For EL7-based platform, this is the preferred command:
+      #+BEGIN_SRC shell
+      sudo systemctl start mysqld.service
+      #+END_SRC
+    - check the status
+      #+BEGIN_SRC shell
+      sudo systemctl status mysqld.service
+      #+END_SRC
+    - for MySQL 5.7, using the following command to get the root password:
+      #+BEGIN_SRC shell
+      sudo grep 'temporary password' /var/log/mysqld.log
+      #+END_SRC
+    - login to the mysql
+      #+BEGIN_SRC shell
+      mysql -uroot -p
+      #+END_SRC
+    - Change the root password
+      #+BEGIN_SRC mysql
+      ALTER USER 'root'@'localhost' IDENTIFIED BY '****' 
+      #+END_SRC
+*** Creating a remote connecting user
+    - Creat use by the following command
+      #+BEGIN_SRC MySQL
+      create user joey identified by '****';
+      #+END_SRC
+    - Grant the privilege
+      #+BEGIN_SRC MySQL
+      grant all privileges on *.* to 'joey'@'%' identified by '****' with grant option;
+      flush privileges;
+      #+END_SRC
+*** 添加阿里云组安全规则
+    - =ecs管理页面->本实例安全组->安全组列表->配置规则->添加安全组规则=
+      - 网卡类型： 内网
+      - 规则方向： 入方向
+      - 授权策略： 允许
+      - 协议类型： MySQL(3306)
+      - 授权类型： 地址段访问
+      - 授权对象： 0.0.0.0/0
+* Python环境
+** 安装Python3.6
+   - 下载[[https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz][python 3.6.5]]
+   - 解压 =tar -xvf python-3.6.5.tar.gz=
+   - 安装
+     #+BEGIN_SRC shell
+     ./configure
+     make
+     make test
+     sudo make install
+     #+END_SRC
+** 安装pip
+   - 下载[[https://bootstrap.pypa.io/get-pip.py][get-pip.py]]
+   - 执行下面的命令以安装pip
+     #+BEGIN_SRC shell
+     python3 get-pip.py
+     #+END_SRC
+** 安装虚拟环境
+     #+BEGIN_SRC shell
+     pip install virtualenv
+     virtualenv web -p python3.6
+     cd web
+     source bin/activate
+     pip install --upgrade pip setuptools
+     #+END_SRC
+* Web开发环境
+** 安装Django
+   #+BEGIN_SRC shell
+   pip install django
+   #+END_SRC
+** 安装mysqlclient
+   - 未避免 /mysql_config:无法找到/ 的问题，请先安装 *mysql-devel*
+     #+BEGIN_SRC shell
+     sudo yum install mysql-devel
+     #+END_SRC
+   - 安装mysqlclient
+     #+BEGIN_SRC shell
+     pip install mysqlclient
+     #+END_SRC
+** 创建项目及应用
+   #+BEGIN_SRC shell
+   # 项目名不能包含‘-’ 
+   django-admin startproject wechat
+   cd wechat
+   django-admin startapp membership
+   #+END_SRC
