@@ -139,3 +139,33 @@
    cd wechat
    django-admin startapp membership
    #+END_SRC
+* Django开发
+** Model field
+*** Field types
+    - AutoField
+      - An *IntegerField* that automatically increments according to available IDs.
+    - BigAutoField
+    - BigIntegerField
+    - BinaryField
+    - BooleanField
+    - CharField
+    - DateField
+    - DateTimeField
+    - DecimalField
+    - DurationField
+    - EmailField
+    - FileField
+    - FilePathField
+    - FloatField
+    - ImageField
+    - IntegerField
+    - GenericIPAddressField
+    - NullBooleanField
+    - PositiveIntegerField
+    - PositiveSamllIntegerField
+    - SlugField
+    - SmallIntegerField
+    - TextField
+    - TimeField
+    - URLField
+    - UUIDField

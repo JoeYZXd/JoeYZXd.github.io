@@ -1,0 +1,22 @@
+#+BEGIN_COMMENT
+.. title: 微信公众号对接
+.. slug: wechat-gongzhonghao-implementation
+.. date: 2018-05-03 13:23:00 UTC+08:00
+.. tags: WeChat, Python, Django, Vue.js
+.. category: Programming
+.. link:
+.. description: 微信公众号对接
+.. type: text
+#+END_COMMENT
+
+* 基础参数
+** 创建BaseProperty(Model)
+   #+BEGIN_SRC python 
+   class BaseProperty(models.Model):
+       code = models.CharField(max_length=16)
+       name = models.CharField(max_length=128)
+       status = models.BooleanField(default=True)
+       value = models.CharField(max_length=512)
+       created_at = models.DateTimeField(auto_now_add=True)
+       updated_at = models.DateTimeField(auto_now=True)
+   #+END_SRC
