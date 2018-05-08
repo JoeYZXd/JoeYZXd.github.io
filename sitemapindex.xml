@@ -15,7 +15,15 @@
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/cat_programming.xml</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/centos.xml</loc>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/django.xml</loc>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/emacs.xml</loc>
@@ -27,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/java.xml</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/journey.xml</loc>
@@ -39,7 +47,7 @@
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/mysql.xml</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/newzealand.xml</loc>
@@ -59,15 +67,19 @@
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/programming.xml</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/python.xml</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/reading.xml</loc>
   <lastmod>2018-04-24T03:13:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/shell.xml</loc>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/categories/spacemacs.xml</loc>
@@ -78,8 +90,16 @@
   <lastmod>2018-04-18T07:16:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/vuejs.xml</loc>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://JoeYZXd.github.io/categories/web.xml</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://JoeYZXd.github.io/categories/wechat.xml</loc>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/galleries/rss.xml</loc>
@@ -87,10 +107,10 @@
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/rss.xml</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://JoeYZXd.github.io/sitemap.xml</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-08T07:25:00Z</lastmod>
  </sitemap>
 </sitemapindex>
