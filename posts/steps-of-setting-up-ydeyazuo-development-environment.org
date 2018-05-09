@@ -1,0 +1,12 @@
+#+BEGIN_COMMENT
+.. title: Steps of Setting Up YDE(Yazuo Development Environment)
+.. slug: steps-of-setting-up-ydeyazuo-development-environment
+.. date: 2018-05-08 15:52:49 UTC+08:00
+.. tags: Yazuo, Development
+.. category: Programming
+.. link: 
+.. description: 搭建雅座开发环境步骤 
+.. type: text
+#+END_COMMENT
+
+
