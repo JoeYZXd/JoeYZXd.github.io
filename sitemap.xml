@@ -7,154 +7,166 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://JoeYZXd.github.io/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/2018/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/archive.html</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/blog/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/cat_journey/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/cat_programming/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/centos/</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/development/</loc>
+  <lastmod>2018-05-10T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/django/</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/emacs/</loc>
-  <lastmod>2018-04-18T08:14:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/github/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/java/</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/journey/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/key-binding/</loc>
-  <lastmod>2018-04-19T13:46:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/mysql/</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/newzealand/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/nikola/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/orgmode/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/plan/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/programming/</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/python/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/reading/</loc>
-  <lastmod>2018-04-24T02:27:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/shell/</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/spacemacs/</loc>
-  <lastmod>2018-04-18T08:14:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/virtualenv/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/vuejs/</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/web/</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/categories/wechat/</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/categories/yazuo/</loc>
+  <lastmod>2018-05-10T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/galleries/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/listings/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/posts/key-bindings-of-spacemacs/</loc>
-  <lastmod>2018-04-19T13:46:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/posts/manage-github-blog-by-nikola-in-orgmode/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/posts/plan-of-newzealand-journey/</loc>
-  <lastmod>2018-04-18T04:04:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/posts/reading%20notes%20of%20core%20python%20applications%20programming/</loc>
-  <lastmod>2018-04-24T02:58:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/posts/spacemacs-configuration/</loc>
-  <lastmod>2018-04-18T08:14:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/posts/steps-of-centos-configuration/</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/posts/steps-of-create-a-web-site/</loc>
-  <lastmod>2018-04-25T07:01:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://JoeYZXd.github.io/posts/steps-of-setting-up-ydeyazuo-development-environment/</loc>
+  <lastmod>2018-05-10T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://JoeYZXd.github.io/posts/wechat-gongzhonghao-implementation/</loc>
-  <lastmod>2018-05-08T07:25:00Z</lastmod>
+  <lastmod>2018-05-10T13:38:00Z</lastmod>
  </url>
 </urlset>
