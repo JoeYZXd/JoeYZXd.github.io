@@ -1,0 +1,178 @@
+
+
+#+END_COMMENT
+
+
+* 安装Nikola
+  - 为了避免与其它python开发环境交叉感染，创建独立的虚拟环境专门用于博客管理
+  - 通过(=pip install virtualenv=)安装virtualenv
+  - 安装nikola
+    #+BEGIN_SRC sh
+    cd ~
+    # 由于我的开发环境存在多个版本的python，所以此处指定使用python3.5, 创建虚拟环境，这样虚拟环境的python版本也是3.5
+    virtualenv nikola -p python3.5 # 此处nikola是我们创建的虚拟环境的名称，可以自行更改
+    # 等待安装完成
+    # 此时存在nikola目录
+    cd nikola
+    source bin/activate #只有使用此命令才会使虚拟环境生效，运行后，提示符前面会多一个虚拟环境名称，如 (nikola) joey in ~/nikola
+    # 进入虚拟环境后，升级pip, setuptools到最新版本
+    pip install --upgrade pip setuptools
+    # 安装nikola
+    pip install --upgrade "Nikola[extras]"
+    # 等待安装完成
+    # Successfully installed nikola
+    #+END_SRC
+* 创建Github博客仓库
+  - 在Github上创建一个名字为{Github用户名}.github.io的仓库（repository)，创建时不勾选初始化, 如下图：
+    [[img-url:/images/create_github_blog_repository.png]]
+  - clone仓库
+    #+BEGIN_SRC sh
+    $ git clone git@github.com:<username>.github.io.git ~/blog
+    #+END_SRC
+  - 初始化仓库
+    #+BEGIN_SRC sh
+    $ cd ~/blog
+    $ git checkout -b sources
+    #+END_SRC
+  - 添加.gitignore
+    #+BEGIN_SRC text 
+    *.py[cod]
+    __pycache__
+    cache
+    output
+    .doit.db
+    _env/
+    #+END_SRC
+  - 提交
+    #+BEGIN_SRC sh
+    git add .gitignore
+    git commit -m "Add .gitignore"
+    #+END_SRC
+* 初始化博客
+  - 通过Nikola搭建博客脚手架
+    #+BEGIN_SRC sh
+    nikola init my_first_site
+    # 按提示回答一些基本问题
+    # 创建完成后会有一个my_first_site的子目录，不需要，删除之
+    mv my_first_site/* .
+    rm -rf my_first_site
+    #+END_SRC
+  - 提交Nikola配置文件
+    #+BEGIN_SRC sh
+    git add conf.py
+    git commit -m "Add conf.py"
+    #+END_SRC
+* 安装Org Mode插件
+  - Nikola原生支持orgmode，不过需要安装插件
+    #+BEGIN_SRC sh
+    nikola plugin -i orgmode
+    #+END_SRC
+  - 安装完成后需要修改conf.py完成配置
+    #+BEGIN_SRC python
+    # Add the orgmode compiler to your COMPILERS dict.
+    COMPILERS["orgmode"] = ('.org',)
+
+    # Add org files to your POSTS, PAGES
+    POSTS = POSTS + (("posts/*.org", "posts", "post.tmpl"),)
+    PAGES = PAGES + (("stories/*.org", "stories", "story.tmpl"),)
+    #+END_SRC
+* 测试
+  - 至此博客已基本配置完成，可启动服务测试是否安装成功
+    #+BEGIN_SRC sh
+    nikola build
+    nikola serve
+    #+END_SRC
+  - 通过浏览器访问 =http://localhost:8000=
+* 添加新的博客
+  - 可通过命令快速创建一篇博客
+    #+BEGIN_SRC sh
+    nikola new_post -e -f orgmode
+    # 按提示回答一些基本问题
+    #+END_SRC
+  - 除了上面说的启动服务的方式，还可通过下面的命令完成，自动检测是否有更改、编译并启动服务
+    #+BEGIN_SRC sh 
+    nikola auto
+    #+END_SRC
+* 部署Github
+  - 当创建了新的博客后，需要推送到Github,才可在网络上看到最新的博客内容
+  - 配置Github推送配置，修改 =conf.py=
+    #+BEGIN_SRC python
+    GITHUB_SOURCE_BRANCH = 'sources'
+    GITHUB_DEPLOY_BRANCH = 'master'
+    #+END_SRC
+  - 推送
+    #+BEGIN_SRC sh
+    nikola github_deploy
+    #+END_SRC
+  - 访问 =http(s)://<username>.github.io= 即可看到最新内容
+* 优化
+** 将博客元数据（metadata）抽离出博客
+   - 修改配置文件 =conf.py=
+     #+BEGIN_SRC python
+     ONE_FILE_POSTS = False
+     #+END_SRC
+** 主题
+   - Nikola提供了一些[[https://themes.getnikola.com][主题]]
+   - 安装主题
+     #+BEGIN_SRC sh
+     nikola theme -i bnw
+     #+END_SRC
+   - 修改配置文件 =conf.py=
+     #+BEGIN_SRC python
+     THEME = 'bnw'
+     
+     USE_BUNDLES = True
+     #+END_SRC
+   ** 修改主题配色
+   - 修改配色文件 =nikola-bnw/less/bnw.less=
+     #+BEGIN_SRC text
+     // primary-color: for background
+     // secondary-color: navbar-links
+     // third-color: for navbar
+     // accent-color: for font.
+     @primary-color: #FCF7F7;
+     @secondary-color: #ECE1DE;
+     @third-color: #6B5364;
+     @accent-color: #304860;
+     #+END_SRC
+   - 修改 =/themes/bnw/bundles=
+     #+BEGIN_SRC conf
+     assets/css/all-nocdn.css=bnw-generated.css,bnw.css,font-awesome.min.css,rst.css,code.css,custom.css
+     assets/css/all.css=bnw-generated.css,bnw.css,font-awesome.min.css,rst.css,code.css,custom.css
+     assets/js/all-nocdn.js=jquery-1.10.2.min.js,headroom.min.js,scripts.js
+     #+END_SRC
+     - 其中 =all-nocdn.css= 和 =all.css= 都添加了 =bnw.css=，=bnw.css= 由配置文件 =/themes/bnw/less/bnw.less= 生成， =bnw.less= 中可对主题配色进行修改
+** 添加页脚的ICON，如Twitter, Facebook等
+   - 修改配置文件 =conf.py=
+     #+BEGIN_SRC python
+     GLOBAL_CONTEXT = {
+         'email': 'joy.zhangxiaodong@gmail.com',
+         'twitter': 'joey.zhangxiaodong',
+         'github': 'JoeYZXd',
+     }
+     #+END_SRC
+** 引用图片
+   - 配置图片长廊及图片仓库，修改配置文件 =conf.py=
+     #+BEGIN_SRC python
+     GALLERY_FOLDERS = {"galleries": "galleries"}
+     THUMBNAIL_SIZE = 180
+     MAX_IMAGE_SIZE = 1280
+     USE_FILENAME_AS_TITLE = True
+     EXTRA_IMAGE_EXTERNSIONS = []
+     GALLERY_SORT_BY_DATE = True
+     
+     IMAGE_FOLDERS = {'images': 'images'}
+     IMAGE_THUMBNAIL_SIZE = 400
+     IMAGE_THUMBNAIL_FORMAT = '{name}.thumbnail{ext}'
+     #+END_SRC
+   - 引用图片
+     - 由于上一步配置的图片路径为`images`,所以将所有需要引用的图片都放入`images`目录
+     - 在博客中通过 
+       #+BEGIN_SRC org
+       [[img-url:/images/test.jpeg]]
+       #+END_SRC
+       引用图片，生成的html代码如下：
+       #+BEGIN_SRC html
+       <a href="/images/test.jpeg"/>
+       #+END_SRC
+     

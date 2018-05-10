@@ -1,8 +1,8 @@
 /* Fonts Loading */
-@import url(~'https://fonts.googleapis.com/css?family=McLaren');
-@import url(~'https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
-@import url(~'https://fonts.googleapis.com/css?family=Roboto+Slab');
-@import url(~'https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(~'http://fonts.googleapis.com/css?family=McLaren');
+@import url(~'http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
+@import url(~'http://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url(~'http://fonts.googleapis.com/css?family=Open+Sans');
 
 // color theme
 // primary-color: for background
@@ -10,11 +10,17 @@
 // third-color: for navbar
 // accent-color: for font.
 
-@primary-color: #4D6D9A; //grey
-@secondary-color: #5F6366; //lightblue
-@third-color: #99CED3;
-@accent-color: #86B3D1;
-@line-color: #EDB5BF;
+// yellow/red/dark-blue
+// @primary-color: #FCF9E8;
+// @secondary-color: #F0AE57;
+// @third-color: #8D3F35;
+// @accent-color: #1B2325;
+
+// near-white/pink/dark-red/dark-blue
+@primary-color: #FCF7F7;
+@secondary-color: #ECE1DE;
+@third-color: #6B5364;
+@accent-color: #304860;
 
 /* Font Mixins */
 .body-font() {
@@ -75,7 +81,7 @@ body {
 
 /* header */
 header {
-    background: @accent-color;
+    background: @third-color;
     position: fixed;
     z-index: 10;
     top: 0;
@@ -324,7 +330,7 @@ footer {
 	    position: absolute;
 	    height: 100%;
 	    width: 6px;
-	    background: @line-color;
+	    background: @accent-color;
 	    margin-left: 8rem;
 	    opacity: 0.75;
 	}
@@ -382,7 +388,7 @@ footer {
 .tagline,
 .meta-header,
 .post-header {
-    background: @line-color;
+    background: @accent-color;
     color: @primary-color;
     padding: 10vh 0;
     font-size: 3em;
